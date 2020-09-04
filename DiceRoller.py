@@ -1,5 +1,9 @@
 import random
 
+def dice_roll():
+    diceRoll = random.randint(1, 6)
+    return diceRoll
+
 def main():
     p1 = 0
     p2 = 0
@@ -31,9 +35,5 @@ def main():
       print("Player 2 has won the game! Rounds won: " + str(p2score))
     except:
       print("This isn't a number!")
-
-def dice_roll():
-    diceRoll = random.randint(1, 6)
-    return diceRoll
     
 main()
